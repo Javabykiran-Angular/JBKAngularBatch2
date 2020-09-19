@@ -1,0 +1,24 @@
+<p>property-binding works!</p>
+
+<!-- property binding is always works with html tag attribute
+syntax is [] within that square bracket mentoned attribute name & use dynamic property name (makes property always in respective .ts)
+-->
+
+<input type="text" [value]="name">
+<br><br><br>
+
+<img [src]="imgUrl" alt="" style="width: 200px;height: 200px;">
+<hr>
+<div hidden>
+    Simple text in HTML
+</div><br><br><br>
+<div [hidden]="ishidden">
+    Simple text Using Property Binding <br>
+<input type="text" placeholder="Enter the name">
+</div>
+
+<br><br><br>
+<div hidden="{{ishidden}}">
+    Simple text Using String Interpolation<br>
+<input type="text" placeholder="Enter the name">
+</div>

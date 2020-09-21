@@ -1,0 +1,13 @@
+<p>class-binding works!</p>
+
+<h1 class="warning"> In Normal HTML Apply css Class </h1>
+<hr>
+
+<h1 [class]="myclass"> Apply class Binding in Angular </h1>
+
+<h1 [class.danger]="rating<3" [class.warning]="rating>3" > Apply Class Binding using condition </h1>
+<hr>
+
+<!-- ngClass is directive given by angular again it takes object as property name -->
+
+<p [ngClass]="myobj"> Apply ngClass Directive </p>

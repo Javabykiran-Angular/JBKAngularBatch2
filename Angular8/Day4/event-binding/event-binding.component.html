@@ -1,0 +1,39 @@
+<p>event-binding works!</p>
+
+<!-- <button (click)="onclick()"> Click Me </button>
+<br><br>
+
+<img src="../../assets/Desert.jpg" alt="" (click)="onclick2()" ><br>
+
+<div [hidden]="ishidden" >
+    {{strname}}
+</div> <br><br>
+
+<button (click)="res=2+2"> Calculate </button><br>
+{{res}} -->
+
+<!-- $event - it is Special variable provided by angular.It give information of Cureent DOM element  -->
+
+<button (click)="OnClickEvent($event)" value="It Gives Info">Use of $Event</button>
+
+<!-- template reference Varible-We can gives name to any tag with the help of template reference Varible, we can get All information of that DOM Element.we can access it to send the info.We can change the value of that element.Again TRV is a object its gives all information of that element -->
+<hr>
+<input type="text" #myinput placeholder="Enter the Name.." > <br><br>
+<button (click)="TRVImplement(myinput.value)">Click Me</button> <br><br>
+<button (click)="TRVImplement1(myinput)">Click Me</button>
+
+
+<hr>
+<input type="text" placeholder="Enter the Name.." #myinput1> <br><br>
+<button (click)="GetText(myinput1.value)">Submit</button> <br><br>
+<input type="text" placeholder="Result.." [value]="name"> 
+
+
+
+
+
+
+
+
+
+

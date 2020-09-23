@@ -1,0 +1,58 @@
+<p>for-directive works!</p>
+<br>
+<!-- <ul>
+    <li *ngFor="let item of course"> {{item}} </li>
+</ul>
+<br><br>
+<ul>
+    <li *ngFor="let item of course;index as i">
+        {{i}} {{item}}
+    </li>
+</ul>
+<br>
+<ul>
+    <li *ngFor="let item of course;first as f">
+        {{f}} {{item}}
+    </li>
+</ul>
+
+<br>
+<ul>
+    <li *ngFor="let item of course;last as l">
+        {{l}} {{item}}
+    </li>
+</ul>
+
+<br>
+<ul>
+    <li *ngFor="let item of course;even as e">
+        {{e}} {{item}}
+    </li>
+</ul>
+
+<br>
+<ul>
+    <li *ngFor="let item of course;odd as o">
+        <div *ngIf="o==true">
+            {{o}} {{item}}
+        </div>       
+    </li>
+</ul> -->
+
+<table border="1px">
+    <thead>
+        <th> # </th>
+        <th> Product Name </th>
+        <th> Quantity </th>
+        <th> Prize </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrobj;index as i">
+            <td> {{i+1}} </td>
+            <td> {{item.prodname}} </td>
+            <td> {{item.quantity}} </td>
+            <td> {{item.prize}} </td>
+        </tr>
+    </tbody>
+</table>
+

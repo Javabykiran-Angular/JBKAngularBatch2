@@ -1,0 +1,39 @@
+<p>event-binding2 works!</p>
+<br><br>
+
+<input type="text" placeholder="Enter the Name.."(change)="onChange()" [style.background]="mycolor" 
+(focus)="onFocus()"
+>
+<br><br>
+<!-- keyup & keyDown Event -->
+<textarea #txtarea name="" id="" cols="30" rows="10"
+(keyup)="OnKeyUp(txtarea.value)"
+></textarea> <br><br>
+
+<textarea name="" id="" cols="30" rows="10"
+(keyup)="OnKeyUp1($event)"
+></textarea>
+<br><br>
+
+<input #input2 type="text" placeholder="Enter the Name" (keydown)="OnKeyDown(input2.value)"   
+>
+<!-- <br><br><br><br><br><br><br><br> -->
+
+<!-- mouseover & mouseout -->
+
+<!-- two way Binding -->
+<!-- To implement two way binding we have to use a directive given by angular i.e. ngModel 
+whose syntax is [()]
+-->
+
+<hr>
+<input type="text" [(ngModel)]="name" ><br>
+{{name}}
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<p>mouse-event works!</p>
+
+<!-- mouseover & mouseout -->
+<table border="1px">
+    <thead>
+        <th>#</th>
+        <th> Product Name </th>
+        <th>Quantity</th>
+        <th>Prize</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrobj;index as i" (mouseover)="onMouseOver(item)" [ngClass]="{ 
+            'highlight':item.prodname==selected
+        }"
+        (mouseout)="onMouseOut()"
+        >
+            <td> {{i+1}} </td>
+            <td> {{item.prodname}} </td>
+            <td> {{item.quantity}} </td>
+            <td> {{item.prize}} </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+<table border="1px">
+    <thead>
+        <th>#</th>
+        <th> Product Name </th>
+        <th>Quantity</th>
+        <th>Prize</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrobj;index as i" (mouseover)="onMouseOver1(item)" 
+        (mouseout)="onMouseOut1()"
+        >
+            <td> {{i+1}} </td>
+            <td> {{item.prodname}} </td>
+            <td [ngClass]="{ 
+                'quantityhighlight':item.prodname==selected1
+            }"> {{item.quantity}} </td>
+            <td [ngClass]="{ 
+                'highlight':item.prodname==selected1
+            }"> {{item.prize}} </td>
+
+        </tr>
+    </tbody>
+</table>
+
+

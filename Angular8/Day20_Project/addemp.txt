@@ -1,0 +1,13 @@
+Input taken from user
+name
+depart
+status
+phone no
+created by
+updated by = created by
+country ==> drop list (country table jo aapne back end mein bana ya hai write down one api -> getallcountry)
+call getallcountry in ngOnInit() method so store in array of object
+when you send a data that time you have send created date as well as updatated date & for add employee created date=updatated date
+
+let date=Date.now()
+

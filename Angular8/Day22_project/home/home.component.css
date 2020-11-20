@@ -1,0 +1,9 @@
+.tableFixHead table th{
+    top: 0;
+    position: sticky;  
+  }
+
+  .btnclass{
+    margin: 8px;
+    padding: 5px;
+  }
